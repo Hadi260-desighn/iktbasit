@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>قيد التنفيذ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Cairo", sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 900px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .img-week {
+            width: 50%;
+        }
+
+        .text {
+            width: 50%;
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 992px) {
+  #quotes-grid {
+    grid-template-columns: repeat(1, 50%);
+  }
+}
+/* nav-bar */
+@media (max-width: 887px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.05);
+    padding: 80px 20px;
+    transition: left 0.4s ease;
+    z-index: 999;
+    border-right: 3px solid #ae46cc;
+  }
+
+  .nav-links .close-menu {
+    display: block;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+  
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    margin-bottom: 20px;
+  }
+
+  .nav-links a {
+    font-size: 20px;
+    color: #4a148c;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .nav-links a:hover {
+    color: #ae46cc;
+  }
+
+  .close-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #4a148c;
+  }
+
+  .menu-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #menu-icon {
+    font-size: 22px;
+    cursor: pointer;
+    color: #4a148c;
+  }
+
+  .personal-site-btn {
+    width: 145px;
+  }
+
+  .personal-site-btn a {
+    font-size: 12px;
+  }
+
+  #hero h1 {
+    font-size: 50px;
+}
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
+
+  .personal-site-btn {
+    padding: 6px 10px;
+    height: 36px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .personal-site-btn a {
+    font-size: 12px;
+  }
+
+  .menu-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+
+  #menu-icon {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .nav-links {
+    width: 230px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #quotes-container {
+    justify-content: center;
+  }
+
+  .quote-card {
+    flex: 1 1 90%; /* تقريباً نفس عرض الشاشة مع هامش بسيط */
+    max-width: 90%;
+  }
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="main-header">
+        <div class="nav-container">
+            <img src="./image/logo/اقتباساتي-removebg-preview.png" alt="شعار الموقع" class="logo" />
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">الاقتباسات</a></li>
+                    <li><a href="about.html" class="active-nav">عن المشروع</a></li>
+                    <li><a href="fav.html" >المفضلة</a></li>
+                    <li><i class="fa-solid fa-xmark close-menu"></i></li>
+                </ul>
+            </nav>
+            <div class="menu-actions">
+                <button class="personal-site-btn">
+                    <a href="https://hadeababneh.space" target="_blank">
+                        موقعي الشخصي <i class="fa-solid fa-user"></i>
+                    </a>
+                </button>
+                <i class="fa-solid fa-bars-staggered" id="menu-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="text">
+            <h1>الصفحة قيد التنفيذ</h1>
+            <p>نقوم حالياً ببعض التحسينات. ترقبونا قريباً ✨</p>
+        </div>
+        <div class="img-week">
+            <img src="./image/Wavy_Tech-08_Single-04.jpg" alt="قيد التنفيذ" />
+        </div>
+    </div>
+
+    <script>document.addEventListener("DOMContentLoaded", () => {
+            const menuIcon = document.getElementById("menu-icon");
+            const navLinks = document.getElementById("nav-links");
+            const closeMenu = document.querySelector(".close-menu");
+
+            menuIcon.addEventListener("click", () => {
+                navLinks.classList.add("active");
+            });
+
+            closeMenu.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+            });
+        });</script>
+</body>
+
+</html>
