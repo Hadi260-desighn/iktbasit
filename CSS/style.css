@@ -16,6 +16,36 @@ font-size: 16px;
 direction: rtl;
 text-align: right;
 }
+/* Scrollbar عام */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* مسار الخلفية */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+/* مقبض السحب */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+}
+
+/* عند تمرير الماوس فوقه */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* تحديد النص عند السحب */
+::selection {
+  background: #fada67;
+  color: #000;
+}
+
 
 /* العناوين */
 h1, h2, h3, h4, h5, h6 {

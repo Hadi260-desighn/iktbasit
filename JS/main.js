@@ -284,5 +284,3 @@ searchBar.addEventListener('input', () => {
 
   displayQuotes(filteredQuotes);
 });
-
-
