@@ -1,5 +1,5 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
+
 <html lang="ar" dir="rtl">
 
 <head>
@@ -8,7 +8,7 @@
     <title>اقتباساتي</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
 </head>
 
 <body>
@@ -129,166 +129,6 @@
         <div class="footer-bottom">© 2025 جميع الحقوق محفوظة لـ هادي عبابنة.</div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="./JS/main.js"></script>
 </body>
 
-=======
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- style links -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <!-- title -->
-    <title>اقتباساتي</title>
-</head>
-
-<body>
-    <!-- navbar -->
-    <header class="main-header">
-        <div class="nav-container">
-            <img src="./image/logo/اقتباساتي-removebg-preview.png" alt="شعار الموقع" class="logo">
-
-            <nav>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#quotes-list">الاقتباسات</a></li>
-                    <li><a href="#about">عن المشروع</a></li>
-                    <li><a href="fav.html">المفضلة</a></li>
-                    <li><i class="fa-solid fa-xmark close-menu"></i></li>
-                </ul>
-            </nav>
-
-            <div class="menu-actions">
-                <button class="personal-site-btn">
-                    <a href="https://hadeababneh.space" target="_blank">
-                        موقعي الشخصي <i class="fa-solid fa-user"></i>
-                    </a>
-                </button>
-
-                <i class="fa-solid fa-bars-staggered" id="menu-icon"></i>
-            </div>
-    </header>
-
-    <!-- hero sec -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>QuoteVerse</h1>
-            <p class="tagline">اقتباسات تلهمك، تُشعلك، تلمسك</p>
-            <input type="text" id="search" placeholder="ابحث عن اقتباس أو كاتب...">
-        </div>
-    </section>
-
-    <!-- tobic -->
-    <!-- اختيار اللغة -->
-    <section id="language-selection" style="text-align: center; margin: 20px;">
-        <button id="btn-arabic" class="lang-btn active">العربية</button>
-        <button id="btn-english" class="lang-btn">English</button>
-    </section>
-
-    <!-- أزرار المواضيع العربية -->
-    <section id="topic-arabic" style="display: block; text-align: center; margin-bottom: 30px;">
-        <nav class="topic-nav">
-            <button data-topic="حب"><i class="fa-solid fa-heart"></i> الحب</button>
-            <button data-topic="حكمة"><i class="fa-solid fa-book-open"></i> الحكمة</button>
-            <button data-topic="تحفيز"><i class="fa-solid fa-fire"></i> التحفيز</button>
-            <button data-topic="حياة"><i class="fa-solid fa-leaf"></i> الحياة</button>
-            <button data-topic="حزن"><i class="fa-solid fa-face-sad-tear"></i> الحزن</button>
-        </nav>
-    </section>
-
-    <!-- أزرار المواضيع الإنجليزية -->
-    <section id="topic-english" style="display: none; text-align: center;">
-        <nav class="topic-nav">
-            <button data-topic="love"><i class="fa-solid fa-heart"></i> Love</button>
-            <button data-topic="wisdom"><i class="fa-solid fa-book-open"></i> Wisdom</button>
-            <button data-topic="motivation"><i class="fa-solid fa-fire"></i> Motivation</button>
-            <button data-topic="life"><i class="fa-solid fa-leaf"></i> Life</button>
-            <button data-topic="sadness"><i class="fa-solid fa-face-sad-tear"></i> Sadness</button>
-        </nav>
-    </section>
-
-    <!-- حاوية الاقتباسات -->
-    <div id="quotes-container"></div>
-
-    <!-- زر المزيد -->
-    <div style="text-align: center; margin: 20px;">
-        <button id="load-more-btn" class="load-more-btn">المزيد</button>
-    </div>
-
-    <div id="quote-modal" class="quote-modal hidden">
-        <div class="modal-box">
-            <span id="close-modal" class="close-btn">&times;</span>
-            <blockquote>
-                <p id="quote-text">"حكمتك هنا"</p>
-                <footer id="quote-author">—</footer>
-            </blockquote>
-            <div class="modal-actions">
-                <button id="like"><i class="fa-regular fa-heart"></i></button>
-                <button id="copy"><i class="fa-regular fa-copy"></i></button>
-                <button id="share"><i class="fa-solid fa-share-nodes"></i></button>
-            </div>
-        </div>
-    </div>
-    
-<footer class="footer">
-    <div class="footer-inner">
-
-        <!-- عن الموقع -->
-        <div class="col about">
-            <h3>عن الموقع</h3>
-            <p>كلمات مختصرة، أثر عميق. منصة تجمع أفضل الاقتباسات بطريقة مريحة للعين ومُلهمة.</p>
-        </div>
-
-        <!-- موقعي الشخصي -->
-        <div class="col personal">
-            <h3>موقعي الشخصي</h3>
-            <a href="https://hadeababneh.space" target="_blank">hadeababneh.space</a>
-        </div>
-
-        <!-- الشركة الداعمة -->
-        <div class="col partner">
-            <h3>الشركة الداعمة</h3>
-            <a href="https://maestrosolutions.tech/" target="_blank"><img src="./image/logo/maestrosolutions.svg" alt="">Maestro Solutions</a>
-        </div>
-        
-
-        <!-- تابعني -->
-        <div class="col social">
-            <h3>تابعني</h3>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/hade.mohmmed.2025" target="_blank" title="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/hadimhmmad697/" target="_blank" title="WhatsApp">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/hadi-mohammed-196660355/" target="_blank" title="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="https://hadeababneh.space" target="_blank" title="موقعي">
-                    <i class="fa-solid fa-globe"></i>
-                </a>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        © 2025 جميع الحقوق محفوظة لـ هادي عبابنة.
-    </div>
-</footer>
-
-
-
-
-
-
-
-
-    <script src="main.js"></script>
-</body>
-
->>>>>>> 8222da1 (هلا)
-</html>
